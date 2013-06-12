@@ -39,5 +39,5 @@ ichigotake
 
 # LICENSE
 
-(MIT LICENSE)[http://opensource.org/licenses/MIT]
+[MIT LICENSE](http://opensource.org/licenses/MIT)
 
