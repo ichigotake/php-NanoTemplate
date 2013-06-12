@@ -29,6 +29,8 @@ class NanoTemplate {
 
         if (isset($layout)) {
             include("$this->template_dir/$layout");
+        } else {
+            echo $content;
         }
     }
 
