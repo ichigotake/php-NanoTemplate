@@ -1,8 +1,8 @@
 <?php
 
-require 'lib/NanoTemplate.php';
+require __DIR__ . '/../lib/NanoTemplate.php';
 
-$t = new NanoTemplate('sample');
+$t = new NanoTemplate('view/');
 
 $t->set('greet_jp', 'おはよう');
 
