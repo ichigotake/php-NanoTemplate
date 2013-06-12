@@ -2,7 +2,7 @@
 
 class NanoTemplate {
 
-    static public $VERSION = '0.02';
+    static public $VERSION = '0.03';
 
     private $assign = array();
 
