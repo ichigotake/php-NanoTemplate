@@ -1,5 +1,5 @@
 <!doctype html>
 
-<?php echo $content ?>
+<?php echo $_content ?>
 
 

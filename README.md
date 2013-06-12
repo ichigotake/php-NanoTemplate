@@ -19,7 +19,7 @@ All function in example. This module is verrrry simply!
     ));
 
     ### view/template.php
-    <?php $layout = 'layout.php' ?>
+    <?php $_layout = 'layout.php' ?>
     
     <?php echo $greet_jp ?> (Japanese mean "<?php echo $greet ?>")
 
@@ -29,7 +29,7 @@ All function in example. This module is verrrry simply!
     <head>
     </head>
     <body>
-        <?php echo $content ?>
+        <?php echo $_content ?>
     </body>
     </html>
 

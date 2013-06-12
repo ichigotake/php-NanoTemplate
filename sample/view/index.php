@@ -1,4 +1,4 @@
-<?php $layout = 'layout.php' ?>
+<?php $_layout = 'layout.php' ?>
 
 <?php echo $greet ?>
 

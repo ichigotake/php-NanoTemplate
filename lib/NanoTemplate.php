@@ -25,12 +25,12 @@ class NanoTemplate {
 
         ob_start();
         include("$this->template_dir/$tmpl");
-        $content = ob_get_clean();
+        $_content = ob_get_clean();
 
-        if (isset($layout)) {
-            include("$this->template_dir/$layout");
+        if (isset($_layout)) {
+            include("$this->template_dir/$_layout");
         } else {
-            echo $content;
+            echo $_content;
         }
     }
 
