@@ -37,3 +37,7 @@ All function in example. This module is verrrry simply!
 
 ichigotake
 
+# LICENSE
+
+(MIT LICENSE)[http://opensource.org/licenses/MIT]
+
