@@ -6,9 +6,10 @@ class NanoTemplate {
 
     private $assign = array();
 
-    public function __construct($template_dir = 'view')
+    public function __construct($template_dir = 'view', $charset = 'UTF-8')
     {
         $this->template_dir = $template_dir;
+        $this->charset = $charset;
     }
 
     public function set($key, $value)
@@ -20,7 +21,7 @@ class NanoTemplate {
     {
         //bind variable for template
         foreach (array_merge($this->assign, $binds) as $key => $value) {
-            $$key = htmlspecialchars($value);
+            $$key = htmlspecialchars($value, ENT_QUOTES, $this->charset);
         }
 
         ob_start();

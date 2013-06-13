@@ -7,7 +7,7 @@ NanoTemplate - Nano template engine with PHP5 language
 All function in example. This module is verrrry simply!
 
     ### index.php
-    # argument for template directory
+    # param(optional): ($view = 'view/', $charset = 'UTF-8')
     $t = new NanoTemplate('view/');
 
     # assign variable
