@@ -20,7 +20,7 @@ class NanoTemplate {
     {
         //bind variable for template
         foreach (array_merge($this->assign, $binds) as $key => $value) {
-            $$key = $value;
+            $$key = htmlspecialchars($value);
         }
 
         ob_start();
