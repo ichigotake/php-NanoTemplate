@@ -33,6 +33,18 @@ All function in example. This module is verrrry simply!
     </body>
     </html>
 
+or, you can used by static call!
+
+    # property set
+    NanoTemplate::$charset = 'EUC-JP';
+    NanoTemplate::$template_view = __DIR__ . '/admin/';
+
+    # render template
+    NanoTemplate::render('index.php', array(
+        'greet' => 'Goo morning!',
+        'greet_jp' => 'おはよーおはよー',
+    ));
+
 # AUTHOR
 
 ichigotake
