@@ -35,7 +35,7 @@ class NanoTemplate {
 
     public function render($tmpl = null, $binds = array())
     {
-        $template_dir = self::$template_dir;
+        $template_dir = (strpos('/', $tmpl) === 0) ? dirname($tmpl) : self::$template_dir;
 
         //bind variable for template
         foreach (array_merge(self::$assign, $binds) as $key => $value) {
