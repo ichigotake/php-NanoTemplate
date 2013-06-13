@@ -2,7 +2,7 @@
 
 class NanoTemplate {
 
-    static public $VERSION = '0.05';
+    static public $VERSION = '0.06';
 
     static public $template_dir = 'view';
 
