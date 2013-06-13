@@ -6,6 +6,17 @@ NanoTemplate - Nano template engine with PHP5 language
 
 All function in example. This module is verrrry simply!
 
+very simply call
+
+    require 'lib/NanoTemplate.php';
+
+    render('/path/to/view.php', array(
+        'greet' => 'hahaha',
+        'greet_jp' => 'ごきげんよう',
+    ));
+
+or, make instance
+
     ### index.php
     # param(optional): ($view = 'view/', $charset = 'UTF-8')
     $t = new NanoTemplate('view/');

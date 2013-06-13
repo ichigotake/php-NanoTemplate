@@ -1,10 +1,20 @@
 <?php
 
+// export global function
+function render() {
+    $tmp = NanoTemplate::$template_dir;
+    NanoTemplate::$template_dir = $_SERVER['PWD'];
+    call_user_func_array('NanoTemplate::render', func_get_args());
+    NanoTemplate::$template_dir = $tmp;
+}
+
+NanoTemplate::$template_dir = $_SERVER['PWD'];
+
 class NanoTemplate {
 
     static public $VERSION = '0.06';
 
-    static public $template_dir = 'view';
+    static public $template_dir;
 
     static public $charset = 'UTF-8';
     
