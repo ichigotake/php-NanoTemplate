@@ -39,7 +39,11 @@ class NanoTemplate {
 
         //bind variable for template
         foreach (array_merge(self::$assign, $binds) as $key => $value) {
-            $$key = htmlspecialchars($value, ENT_QUOTES, self::$charset);
+            if (is_object($value)) {
+                $$key = $value;
+            } else {
+                $$key = htmlspecialchars($value, ENT_QUOTES, self::$charset);
+            }
         }
 
         ob_start();
