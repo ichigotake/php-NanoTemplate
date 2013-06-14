@@ -12,7 +12,7 @@ NanoTemplate::$template_dir = $_SERVER['PWD'];
 
 class NanoTemplate {
 
-    static public $VERSION = '0.07';
+    static public $VERSION = '0.08';
 
     static public $template_dir;
 
