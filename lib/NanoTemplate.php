@@ -8,7 +8,9 @@ function render() {
     NanoTemplate::$template_dir = $tmp;
 }
 
-NanoTemplate::$template_dir = $_SERVER['PWD'];
+if (isset($_SERVER['PWD'])) {
+    NanoTemplate::$template_dir = $_SERVER['PWD'];
+}
 
 class NanoTemplate {
 
