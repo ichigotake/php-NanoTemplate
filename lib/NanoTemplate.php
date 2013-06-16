@@ -14,7 +14,7 @@ if (isset($_SERVER['PWD'])) {
 
 class NanoTemplate {
 
-    static public $VERSION = '0.09';
+    static public $VERSION = '0.10';
 
     static public $template_dir;
 
