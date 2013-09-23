@@ -1,0 +1,21 @@
+{
+    "name": "ichigotake/NanoTemplate",
+    "type": "library",
+    "description": "Nano template engine with PHP5 language",
+    "keyword": ["template engine"],
+    "homepage": "https://github.com/ichigotake/php-NanoTemplate",
+    "version": "0.12",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ichigotake",
+            "email": "k.wisiiy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "NanoTemplate": "lib/" }
+    }
+}
