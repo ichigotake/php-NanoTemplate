@@ -70,7 +70,7 @@ NanoTemplate don't have expand syntax and assigned vars are not '$this'. also, i
 
 NanoTemplate library have only 1 file.
 
-it's pure PHP! because nameing 'Nano'.
+it's pure PHP! PHP is template engine it self, because nameing 'Nano'.
 
 # AUTHOR
 
