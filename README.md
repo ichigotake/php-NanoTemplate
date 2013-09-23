@@ -58,19 +58,11 @@ or, you can used by static call!
 
 # Why naming *Nano*?
 
-Why naming 'Nano'?
-
-PHP template engine already exists, 'MicroTemplate', ZendFramework library, Twig, Smarty, and others.
-
-but, almost template engine has expand syntax or used *$this* vars in template.
-
-and theres template engine is large or including Web Application Framework.
+PHP template engine is already many exists. but almost theres is large or Web Application Framework dependencies.
 
 NanoTemplate don't have expand syntax and assigned vars are not '$this'. also, if you want to assign object vars ;)
 
-NanoTemplate library have only 1 file.
-
-it's pure PHP! PHP is template engine it self, because nameing 'Nano'.
+NanoeTemplate has only 1 pure PHP file. PHP is template engine it self, because nameing 'Nano'.
 
 # AUTHOR
 
