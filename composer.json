@@ -1,5 +1,5 @@
 {
-    "name": "ichigotake/NanoTemplate",
+    "name": "ichigotake/nano-template",
     "type": "library",
     "description": "Nano template engine with PHP5 language",
     "keyword": ["template engine"],
