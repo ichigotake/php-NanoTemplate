@@ -10,6 +10,10 @@ very simply call
 
     require 'lib/NanoTemplate.php';
 
+    # render($view_file, $binds, $charset);
+    # 
+    # The second and the following arguments is optional.
+    # Default charset is "UTF-8"
     render('/path/to/view.php', array(
         'greet' => 'hahaha',
         'greet_jp' => 'ごきげんよう',

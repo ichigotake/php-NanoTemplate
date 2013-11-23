@@ -28,8 +28,12 @@ class NanoTemplate {
         self::$charset = $charset;
     }
 
-    public function render($tmpl = null, $binds = array())
+    public function render($tmpl = null, $binds = array(), $charset = null)
     {
+        if (null === $charset) {
+            $charset = self::$charset;
+        }
+
         $template_dir = (strpos('/', $tmpl) === 0) ? dirname($tmpl) : self::$template_dir;
 
         //bind variable for template
@@ -37,7 +41,7 @@ class NanoTemplate {
             if (is_object($value)) {
                 $$key = $value;
             } else {
-                $$key = htmlspecialchars($value, ENT_QUOTES, self::$charset);
+                $$key = htmlspecialchars($value, ENT_QUOTES, $charset);
             }
         }
 
