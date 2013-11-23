@@ -4,7 +4,7 @@
     "description": "Nano template engine with PHP5 language",
     "keyword": ["template engine", "nano", "template", "engine"],
     "homepage": "https://github.com/ichigotake/php-NanoTemplate",
-    "version": "0.12",
+    "version": "0.15",
     "license": "MIT",
     "authors": [
         {
