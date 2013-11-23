@@ -20,8 +20,6 @@ class NanoTemplate {
 
     static public $charset = 'UTF-8';
     
-    static public $assign = array();
-
     public function __construct($template_dir = null, $charset = 'UTF-8')
     {
         if (!is_null($template_dir)) {
@@ -30,17 +28,12 @@ class NanoTemplate {
         self::$charset = $charset;
     }
 
-    public function set($key, $value)
-    {
-        self::$assign[$key] = $value;
-    }
-
     public function render($tmpl = null, $binds = array())
     {
         $template_dir = (strpos('/', $tmpl) === 0) ? dirname($tmpl) : self::$template_dir;
 
         //bind variable for template
-        foreach (array_merge(self::$assign, $binds) as $key => $value) {
+        foreach ($binds as $key => $value) {
             if (is_object($value)) {
                 $$key = $value;
             } else {

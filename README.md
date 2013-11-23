@@ -21,11 +21,9 @@ or, make instance
     # param(optional): ($view = 'view/', $charset = 'UTF-8')
     $t = new NanoTemplate('view/');
 
-    # assign variable
-    $t->set('greet', 'Hello!');
-
-    # echo template.
+    # echo template with bind variable
     $t->render('template.php', array(
+        'greet'    => 'Hello!!',
         'greet_jp' => 'こんにちは！',
     ));
 
