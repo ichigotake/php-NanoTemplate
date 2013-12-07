@@ -46,18 +46,6 @@ or, make instance
     </body>
     </html>
 
-or, you can used by static call!
-
-    # property set
-    NanoTemplate::$charset = 'EUC-JP';
-    NanoTemplate::$template_view = __DIR__ . '/admin/';
-
-    # render template
-    NanoTemplate::render('index.php', array(
-        'greet' => 'Goo morning!',
-        'greet_jp' => 'おはよーおはよー',
-    ));
-
 # Why naming *Nano*?
 
 PHP template engine is already many exists. but almost theres is large or Web Application Framework dependencies.
